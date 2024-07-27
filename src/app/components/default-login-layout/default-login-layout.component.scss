@@ -26,9 +26,9 @@ main {
     padding: 0 35px;
     gap: 0.5rem;
 
-    img {
+    /*img {
       //margin-bottom: 30px;
-    }
+    }*/
 
     h2 {
       font-size: 20px;
@@ -52,14 +52,14 @@ main {
         width: 100%;
 
         font-size: 14px;
-        color: $gray-bg;
+        //color: $gray-bg;
         font-weight: 400;
         text-transform: uppercase;
 
         div {
           flex-grow: 1;
           height: 2px;
-          background-color: $gray-bg;
+          background-color: #bdbdbd;
         }
       }
 
@@ -72,6 +72,10 @@ main {
         background-color: transparent;
         padding: 12px 24px;
         cursor: pointer;
+
+        &:disabled {
+          opacity: 0.8;
+        }
 
         &.btn-primary {
           background-color: $primary-color;
